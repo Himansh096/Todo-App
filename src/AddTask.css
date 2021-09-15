@@ -1,0 +1,56 @@
+.addtask{
+    background-color:#a892ee ;
+    
+    margin: 30px  auto;
+    max-width: 95%;
+    width: 50rem;
+    padding: 16px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.task_controls{
+    /* padding-left: 20px; */
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.task_control label{
+    display: block;
+   margin-bottom:15px;
+    font-weight: bold;
+}
+
+.task_control input,select{
+    outline: none;
+    border-radius: 6px;
+    padding: 8px;
+    width: 320px;
+    border: 1px solid white;
+    max-width: 100%;
+}
+.action_btn{
+
+    text-align: right;
+}
+ #add_btn{
+    text-align: center;
+    margin: 10px;
+}
+.action_btn button{
+    cursor: pointer;
+    color: white;
+    background-color:#40005d;
+    border-radius: 12px;
+    margin-right: 16px;
+    padding:1rem 2rem;
+    border: 1px solid #40005d;
+    font: inherit;
+}
+.action_btn button:hover{
+     background-color: #510674;
+  border-color: #510674;
+}

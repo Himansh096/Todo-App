@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import AddTask from "./AddTask"
 import './App.css';
+import React, { useState } from 'react'
+import Login from "./Login/Login";
+import ShowTask from './ShowTask'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Register from "./Login/Register";
+import Header from "./Header"
 
 function App() {
+  const [task, setTask] = useState([])
+  const saveTaskData = (enteredTask) => {
+    setTask((preTask) => [enteredTask, ...preTask])
+  }
+  const valueHandler = (data) => {
+    setTask(task.filter((task) => task.key !== data.key))
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/home"  ><AddTask onAddItem={saveTaskData} />
+            <ShowTask data={task} filterData={valueHandler} /></Route>
+          <Route path="/login" exact ><Login /></Route>
+          <Route path="/signup" exact ><Register /></Route>
+        </Switch>
+      </Router>
+    </div >
   );
 }
 

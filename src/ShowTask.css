@@ -1,0 +1,24 @@
+.showTask{
+ margin: 30px auto;
+ background-color: rgb(37, 34, 34);
+max-width:95%;
+width: 50rem;
+padding: 15px;
+border-radius: 16px;
+color: white;
+}
+
+.top_header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.top_header h3{
+font: inherit;
+font-weight: bold;
+}
+.top_header select{
+width: 200px;
+}
+
+

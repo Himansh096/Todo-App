@@ -1,0 +1,50 @@
+.login{
+    margin: 50px auto;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 34, 34);
+    border-radius: 32px;
+    padding: 15px 25px;
+box-sizing: border-box;
+}
+.login form{
+    width: 90%;
+}
+
+.details{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;  
+}
+.details label{
+    text-align: left;
+color: white;
+}
+.details input{
+    border-radius: 8px;
+    border: 1px solid white;
+    max-width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: white;
+}
+.details_btn {
+    display: flex;
+    outline: none;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:20px ;
+    justify-content: space-around;
+}
+.details_btn button{
+    cursor: pointer;
+    color: white;
+    background-color:#40005d;
+    border-radius: 12px;
+    
+    padding:1rem 2rem;
+    border: 1px solid #40005d;
+    font: inherit;
+}
