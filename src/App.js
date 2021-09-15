@@ -22,7 +22,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/"  ><AddTask onAddItem={saveTaskData} />
+          <Route path="/" exact ><AddTask onAddItem={saveTaskData} />
             <ShowTask data={task} filterData={valueHandler} /></Route>
           <Route path="/login" exact ><Login /></Route>
           <Route path="/signup" exact ><Register /></Route>
