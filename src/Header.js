@@ -9,7 +9,7 @@ function Header() {
         <div className="header">
             <div className="header_nav">
                 <ul>
-                    <Link to="/home"><li>Home</li></Link>
+                    <Link to="/"><li>Home</li></Link>
                     {
                         user ? <><li><a> Hello {user.user.name}</a></li> <i class="fas fa-user"></i></> :
                             <><Link to="/login"> <li>Login</li></Link><Link to="/signup"><li>Sign Up</li></Link>
